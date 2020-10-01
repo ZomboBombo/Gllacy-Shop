@@ -3,3 +3,6 @@
 --- ---
 
 This training project is taken from the course of the learning platform «HTML Academy».
+___
+
+Copyright by Sergey Novikov (ZBom). All rights resrved.
