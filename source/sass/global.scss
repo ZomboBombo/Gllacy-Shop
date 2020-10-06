@@ -1,0 +1,52 @@
+// === ИМПРОТИРОВАННЫЕ ФАЙЛЫ СТИЛЕЙ ===
+@import "variables.scss";
+
+// === ГЛОБАЛЬНЫЕ СТИЛИ ===
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+// === МОБИЛЬНАЯ ВЕРСИЯ ===
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 260px;
+  min-height: 100vh;
+
+  background-color: $white;
+
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $black;
+
+  // *** Для устранения горизонтальных скроллов в IE 11, Edge и Safari ***
+  overflow-x: hidden;
+}
+
+// --- Настройка для автоматического "прилипания" футера к низу страницы ---
+footer {
+  margin-top: auto;
+}
+
+// === Класс для доступного сокрытия элементов ===
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
