@@ -1,10 +1,11 @@
 {
   "name": "gllacy-shop",
   "version": "1.0.0",
+  "main": "gulpfile.js",
   "description": "Gllacy Shop is a fruit ice cream store.",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.12",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -20,10 +21,11 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-terser": "^1.4.0",
     "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.4.3"
+    "posthtml-include": "^1.4.3",
+    "readable-stream": "^3.6.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
