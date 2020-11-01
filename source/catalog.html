@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Gllacy Shop: Каталог</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body class="body">
+    <!--
+      *******************
+      *** ШАПКА САЙТА ***
+      *******************
+    -->
+    <header class="site-header">
+      <!-- Левая часть "Шапки" — Лого и Главное меню -->
+      <div class="site-header__menu-wrapper">
+        <a href="index.html" class="site-header__logo" aria-label="Логотип «Gllacy Shop»">
+          <svg width="154" height="64">
+            <use xlink:href=""></use>
+          </svg>
+        </a>
+
+        <!-- Главное меню -->
+        <nav class="site-header__menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="catalog.html" class="menu-list__item-link">Каталог</a>
+
+              <!-- Список пунктов "Каталога" -->
+              <ul class="catalog-list">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link catalog-list__item-link--current">Новинки</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Сливочное</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Щербеты</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Фруктовый лёд</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-link">Доставка и оплата</a>
+            </li>
+
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Правая часть "Шапки" — Поиск, Логин и Корзина -->
+      <div class="site-header__actions-wrapper">
+        <ul class="site-header__actions actions-list">
+          <li class="actions-list__item">
+            <button type="button" class="actions-list__item-icon" aria-label="Кнопка поиска">
+              <svg width="17" height="17">
+                <use xlink:href=""></use>
+              </svg>
+            </button>
+
+            <div class="search-field">
+              <input type="text" class="search-field__input" placeholder="Крем-брюле">
+            </div>
+          </li>
+          <li class="actions-list__item">
+            <button type="button" class="actions-list__item-icon" aria-label="Кнопка входа">
+              <svg width="21" height="19">
+                <use xlink:href=""></use>
+              </svg>
+
+              <span class="actions-list__item-text">Вход</span>
+            </button>
+
+            <form class="login-form" action="" method="post">
+              <fieldset class="login-form__fieldset">
+                <legend class="visually-hidden">Форма авторизации</legend>
+
+                <input type="email" placeholder="email@example.com" required>
+                <input type="password" placeholder="••••••">
+              </fieldset>
+
+              <div class="login-form__available-actions">
+                <button type="submit" class="login-form__submit-button">Войти</button>
+
+                <ul class="login-form__available-actions-list form-actions-list">
+                  <li class="form-actions-list__item">
+                    <a href="#" class="form-actions-list__item-link">Забыли пароль?</a>
+                  </li>
+                  <li class="form-actions-list__item">
+                    <a href="#" class="form-actions-list__item-link">Новая регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </li>
+          <li class="actions-list__item">
+            <button type="button" class="actions-list__item-icon" aria-label="Кнопка корзины">
+              <svg width="21" height="20">
+                <use xlink:href=""></use>
+              </svg>
+
+              <span class="actions-list__item-text">Пусто</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+
+    <!--
+      ************************
+      *** ОСНОВНОЙ КОНТЕНТ ***
+      ************************
+    -->
+    <main class="main-content main-content--inner-page">
+      <h1 class="visually-hidden">Каталог товаров: Сливочное мороженое</h1>
+
+      <!-- График работы магазина -->
+      <article class="shop-info">
+        <h2 class="visually-hidden">График работы</h2>
+
+        <p class="shop-info__opening-hours">С 10 до 20, ежедневно</p>
+        <a href="tel:88124502525" class="shop-info__phone-number">8 812 450 25 25</a>
+      </article>
+
+      <!-- Блок "Хлебные крошки" -->
+      <div class="breadcrumbs-wrapper">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a>Сливочное</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Секция "Каталог продукции: Сливочное мороженое" -->
+      <section class="store-catalog store-catalog--creamy">
+        <h2 class="store-catalog__heading">Сливочное мороженое</h2>
+
+        <!--
+          *** ФОРМА фильтров для Каталога продукции ***
+        -->
+        <form class="store-catalog__filters filters-form" action="" method="get">
+          <!-- === Первичная сортировка === -->
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-heading">Сортировка:</legend>
+
+            <select class="filters-form__sort-type" name="sort-type">
+              <option value="popular">по популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </fieldset>
+
+
+          <!-- === Выбор ценовой категории товаров === -->
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-heading">
+              <span class="filters-form__fieldset-heading-text">Цена:</span>
+              <span class="filters-form__fieldset-heading-text" id="ice-cream-price-field">100 руб. — 500 руб.</span>
+            </legend>
+
+            <!-- Слайдер выбора ценовой категории мороженого -->
+            <div class="filters-form__price-slider price-slider">
+              <button type="button" class="price-slider__knob" id="price-slider-knob-left"></button>
+              <button type="button" class="price-slider__knob" id="price-slider-knob-right"></button>
+            </div>
+          </fieldset>
+
+
+          <!-- === Выбор жирности мороженого === -->
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-heading">Жирность:</legend>
+
+            <ul class="filters-form__fats-list filters-form-list">
+              <li class="filters-form-list__item">
+                <input type="radio" name="fat" value="zero-percents" class="filters-form-list__item-radio" id="zero-fat">
+                <label for="zero-fat" class="filters-form-list__item-label">0%</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="radio" name="fat" value="about-ten-percents" class="filters-form-list__item-radio" id="about-ten-fat" checked>
+                <label for="about-ten-fat" class="filters-form-list__item-label">до 10%</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="radio" name="fat" value="about-thirty-percents" class="filters-form-list__item-radio" id="about-thirty-fat">
+                <label for="about-thirty-fat" class="filters-form-list__item-label">до 30%</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="radio" name="fat" value="over-thirty-percents" class="filters-form-list__item-radio" id="over-thirty-fat">
+                <label for="over-thirty-fat" class="filters-form-list__item-label">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+
+
+          <!-- === Выбор наполнителей для мороженого === -->
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__fieldset-heading">Наполнители:</legend>
+
+            <ul class="filters-form__fats-list filters-form-list">
+              <li class="filters-form-list__item">
+                <input type="checkbox" value="chocolate" class="filters-form-list__item-radio" id="chocolate-filler" checked>
+                <label for="chocolate-filler" class="filters-form-list__item-label">шоколадные</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="checkbox" value="sugar" class="filters-form-list__item-radio" id="sugar-filler" checked>
+                <label for="sugar-filler" class="filters-form-list__item-label">сахарные присыпки</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="checkbox" value="fruits" class="filters-form-list__item-radio" id="fruits-filler">
+                <label for="fruits-filler" class="filters-form-list__item-label">фрукты</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="checkbox" value="syrops" class="filters-form-list__item-radio" id="syrops-filler">
+                <label for="syrops-filler" class="filters-form-list__item-label">сиропы</label>
+              </li>
+              <li class="filters-form-list__item">
+                <input type="checkbox" value="jams" class="filters-form-list__item-radio" id="jams-filler">
+                <label for="jams-filler" class="filters-form-list__item-label">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="filters-form__submit-button">Применить</button>
+        </form>
+
+
+        <ul class="store-catalog__list catalog-list">
+          <li class="catalog-list__item">
+            <article class="product-card product-card--bestseller">
+              <h3 class="visually-hidden">Карточка товара</h3>
+
+              <a href="#" class="product-card__link">
+                <picture>
+                  <img src="img/content-with-orange-jam.jpg" class="product-card__image" alt="Фото мороженка.">
+                </picture>
+
+                <p class="product-card__price">
+                  <span class="product-card__cost">310 &#8381;</span>
+                  <span class="product-card__per-kilo">/кг</span>
+                  <span></span>
+                </p>
+
+                <p class="product-card__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+
+    <!--
+      ********************
+      *** ПОДВАЛ САЙТА ***
+      ********************
+    -->
+    <footer class="site-footer">
+      <!-- Секция "Социальные сети" -->
+      <section class="site-footer__socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__item-link">
+              <span class="visually-hidden">Твиттер</span>
+              <svg width="32" height="32" class="socials__item-icon">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="32" height="32" class="socials__item-icon">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="32" height="32" class="socials__item-icon">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg width="32" height="32" class="socials__item-icon">
+                <use xlink:href=""></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Секция "Дополнительная информация" -->
+      <section class="site-footer__additional-info">
+        <h2 class="visually-hidden">Дополнительная информация</h2>
+
+        <ul class="additional-info">
+          <li class="additional-info__item additional-info__item--for-suppliers">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="additional-info__item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="additional-info__item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="additional-info__item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Секция "Разработчик" -->
+      <section class="site-footer__copyright">
+        <h2 class="visually-hidden">Разработчик</h2>
+
+        <svg width="108" height="39" class="site-footer__copyright-icon">
+          <use xlink:href=""></use>
+        </svg>
+
+        <p class="site-footer__copyright-text">Сделано в <a href="#">HTML Academy</a> &copy;2019</p>
+      </section>
+    </footer>
+
+
+    <!--
+      **********************
+      *** МОДАЛЬНОЕ ОКНО ***
+      **********************
+    -->
+    <div class="modal modal--overlay"></div>
+    <section class="modal modal--window">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+
+      <p class="modal__heading">Мы обязательно Вам ответим!</p>
+      <form class="modal__form feedback-form" action="" method="post">
+        <fieldset class="feedback-form__fieldset">
+          <legend class="visually-hidden">Поля формы</legend>
+
+          <input type="text" class="feedback-form__client-name" placeholder="Имя Фамилия" required>
+          <input type="email" class="feedback-form__client-email" placeholder="email@example.com" required>
+          <textarea class="feedback-form__client-message" placeholder="В свободной форме" required></textarea>
+        </fieldset>
+
+        <button type="submit" class="feedback-form__submit-button">Отправить</button>
+      </form>
+    </section>
+  </body>
+</html>
