@@ -14,45 +14,47 @@
     <header class="site-header">
       <!-- Левая часть "Шапки" — Лого и Главное меню -->
       <div class="site-header__menu-wrapper">
-        <a href="#" class="site-header__logo" aria-label="Логотип «Gllacy Shop»">
+        <a class="site-header__logo" aria-label="Логотип «Gllacy Shop»">
           <svg width="154" height="64">
             <use xlink:href=""></use>
           </svg>
         </a>
 
         <!-- Главное меню -->
-        <ul class="site-header__menu menu-list">
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__item-link">Каталог</a>
+        <nav class="site-header__menu">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="catalog.html" class="menu-list__item-link">Каталог</a>
 
-            <!-- Список пунктов "Каталога" -->
-            <ul class="catalog-list">
-              <li class="catalog-list__item">
-                <a class="catalog-list__item-link catalog-list__item-link--current">Новинки</a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__item-link">Сливочное</a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__item-link">Щербеты</a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__item-link">Фруктовый лёд</a>
-              </li>
-              <li class="catalog-list__item">
-                <a class="catalog-list__item-link">Мелорин</a>
-              </li>
-            </ul>
-          </li>
+              <!-- Список пунктов "Каталога" -->
+              <ul class="catalog-list">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link catalog-list__item-link--current">Новинки</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Сливочное</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Щербеты</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Фруктовый лёд</a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__item-link">Мелорин</a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__item-link">Доставка и оплата</a>
-          </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-link">Доставка и оплата</a>
+            </li>
 
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__item-link">О компании</a>
-          </li>
-        </ul>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__item-link">О компании</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <!-- Правая часть "Шапки" — Поиск, Логин и Корзина -->
@@ -122,6 +124,14 @@
     <main class="main-content">
       <h1 class="visually-hidden">Магазин фруктового мороженого «Gllacy Shop»</h1>
 
+      <!-- График работы магазина -->
+      <article class="shop-info">
+        <h2 class="visually-hidden">График работы</h2>
+        
+        <p class="shop-info__opening-hours">С 10 до 20, ежедневно</p>
+        <a href="tel:88124502525" class="shop-info__phone-number">8 812 450 25 25</a>
+      </article>
+
       <!-- Секция "Лучшие товары" -->
       <section class="main-content__promo slider">
         <h2 class="visually-hidden">Лучшие товары</h2>
@@ -135,11 +145,6 @@
         <div class="slider__main">
           <p class="slider__main-description">Крем-брюле и пломбир с малиновым джемом</p>
           <button type="button" class="orange-button slider__order-button">Давайте оба!</button>
-        </div>
-
-        <div class="shop-info">
-          <p class="shop-info__opening-hours">С 10 до 20, ежедневно</p>
-          <a href="tel:88124502525" class="shop-info__phone-number">8 812 450 25 25</a>
         </div>
       </section>
 
