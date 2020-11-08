@@ -24,7 +24,7 @@
         <nav class="site-header__menu">
           <ul class="menu-list">
             <li class="menu-list__item">
-              <a href="catalog.html" class="menu-list__item-link">Каталог</a>
+              <a class="menu-list__item-link">Каталог</a>
 
               <!-- Список пунктов "Каталога" -->
               <ul class="catalog-list">
@@ -240,26 +240,13 @@
         </form>
 
 
-        <ul class="store-catalog__list catalog-list">
-          <li class="catalog-list__item">
-            <article class="product-card product-card--bestseller">
-              <h3 class="visually-hidden">Карточка товара</h3>
-
-              <a href="#" class="product-card__link">
-                <picture>
-                  <img src="img/content-with-orange-jam.jpg" class="product-card__image" alt="Фото мороженка.">
-                </picture>
-
-                <p class="product-card__price">
-                  <span class="product-card__cost">310 &#8381;</span>
-                  <span class="product-card__per-kilo">/кг</span>
-                  <span></span>
-                </p>
-
-                <p class="product-card__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-              </a>
-            </article>
-          </li>
+        <!-- Список товаров магазина -->
+        <ul class="store-catalog__list catalog-list" id="goods-list">
+          <!--
+            *
+            *** Здесь будут элементы списка с карточками товаров
+            *
+          -->
         </ul>
       </section>
     </main>
@@ -366,5 +353,33 @@
         <button type="submit" class="feedback-form__submit-button">Отправить</button>
       </form>
     </section>
+
+
+    <!--
+      *****************************
+      *** ШАБЛОНКАРТОЧКИ ТОВАРА ***
+      *****************************
+    -->
+    <template id="product-item">
+      <li class="catalog-list__item">
+        <article class="product-card product-card--bestseller">
+          <h3 class="visually-hidden">Карточка товара</h3>
+
+          <a href="#" class="product-card__link">
+            <picture>
+              <img src="img/content-with-orange-jam.jpg" class="product-card__image" alt="Фото мороженка.">
+            </picture>
+
+            <p class="product-card__price">
+              <span class="product-card__cost">310 &#8381;</span>
+              <span class="product-card__per-kilo">/кг</span>
+              <span></span>
+            </p>
+
+            <p class="product-card__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          </a>
+        </article>
+      </li>
+    </template>
   </body>
 </html>
