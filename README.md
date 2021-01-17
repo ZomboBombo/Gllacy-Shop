@@ -5,4 +5,4 @@
 This training project is taken from the course of the learning platform «HTML Academy».
 ___
 
-2021 Copyright by Sergey Novikov (ZBom). All rights resrved.
+Copyright by Sergey Novikov (ZBom). All rights resrved. 2021
