@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Gllacy Shop: самое вкусное мороженое</title>
+    <link rel="stylesheet" type="text\css" href="css/styles.min.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <picture>
+        <img src="" width="154" height="64" class="site-header__logo" alt="Логотип магазина «Gllacy Shop»">
+      </picture>
+
+      <nav class="site-header__navigation-menu">
+        <ul class="navigation-menu">
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__item-link">Каталог</a>
+
+            <ul class="navigation-menu__submenu navigation-submenu">
+              <li class="navigation-submenu__item navigation-submenu__item--novelty">
+                <a href="#" class="navigation-submenu__item-link">Новинки</a>
+              </li>
+              <li class="navigation-submenu__item">
+                <a href="#" class="navigation-submenu__item-link">Сливочное</a>
+              </li>
+              <li class="navigation-submenu__item">
+                <a href="#" class="navigation-submenu__item-link">Щербеты</a>
+              </li>
+              <li class="navigation-submenu__item">
+                <a href="#" class="navigation-submenu__item-link">Фруктовый лёд</a>
+              </li>
+              <li class="navigation-submenu__item">
+                <a href="#" class="navigation-submenu__item-link">Малорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__item-link">Доставка и оплата</a>
+          </li>
+          <li class="navigation-menu__item">
+            <a href="#" class="navigation-menu__item-link">О компании</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <button type="button" name="search-open-button" class="site-header__action-button site-header__action-button--search-open" aria-label="Открыть поисковую строку" title="Открыть поисковую строку">
+        <svg width="20" height="20" class="site-header__action-button-icon site-header__action-button-icon--search">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+        { ПОИСК }
+      </button>
+      <section class="site-header__search search-section">
+        <h2 class="visually-hidden">Диалог поиска товаров</h2>
+
+        <input type="search" name="search-field" class="search-section__search-field" aria-label="Строка поиска" title="Строка поиска" placeholder="Введите название Вашего любимого мороженого...">
+      </section>
+
+
+      <button type="button" name="search-open-button" class="site-header__action-button site-header__action-button--user-profile" aria-label="Войти в личный профиль" title="Войти в личный профиль">
+        <svg width="20" height="20" class="site-header__action-button-icon site-header__action-button-icon--login">
+          <use xlink:href="#icon-login"></use>
+        </svg>
+        Вход
+      </button>
+      <section class="site-header__user-profile">
+        <h2 class="visually-hidden">Пользовательский профиль</h2>
+
+        <form action="" method="post" enctype="multipart/form-data" class="site-header__user-profile-form user-login-form" id="user-profile-form">
+          <fieldset class="user-login-form__fieldset">
+            <legend class="visually-hidden">Логин и пароль</legend>
+
+            <input type="email" name="user-login"
+                   class="user-login-form__input"
+                   aria-label="Введите Вашу электронную почту" title="Введите Вашу электронную почту"
+                   placeholder="email@example.com"
+                   required>
+
+            <input type="password" name="user-password"
+                   class="user-login-form__input"
+                   aria-label="Введите пароль от Вашего профиля" title="Введите пароль от Вашего профиля"
+                   placeholder="Пароль..."
+                   required>
+          </fieldset>
+
+          <div class="user-login-form__actions-box">
+            <button type="submit" class="user-login-form__submit-button" aria-label="Войти в личный профиль">Войти</button>
+            <a href="#" class="user-login-form__link">Забыли пароль?</a>
+            <a href="#" class="user-login-form__link">Новая регистрация</a>
+          </div>
+        </form>
+      </section>
+
+
+      <a href="#" class="site-header__action-button site-header__action-button--basket" aria-label="Продуктовая корзина" title="Продуктовая корзина">
+        <svg width="20" height="20" class="site-header__action-button-icon site-header__action-button-icon--basket">
+          <use xlink:href="#icon-basket"></use>
+        </svg>
+        Пусто
+      </a>
+    </header>
+  </body>
+</html>
